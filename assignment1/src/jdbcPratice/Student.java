@@ -1,50 +1,36 @@
-package practice_jdbc;
+package jdbcPratice;
 
 public class Student {
 	private int rollNo;
-	private String name;
-	private String city;
-	
-	public Student() {
-		// TODO Auto-generated constructor stub
-	}
-
+	private String Name;
+	private String City;
 	public Student(int rollNo, String name, String city) {
 		super();
 		this.rollNo = rollNo;
-		this.name = name;
-		this.city = city;
+		Name = name;
+		City = city;
 	}
-
 	public int getRollNo() {
 		return rollNo;
 	}
-
 	public void setRollNo(int rollNo) {
 		this.rollNo = rollNo;
 	}
-
 	public String getName() {
-		return name;
+		return Name;
 	}
-
 	public void setName(String name) {
-		this.name = name;
+		Name = name;
 	}
-
 	public String getCity() {
-		return city;
+		return City;
 	}
-
 	public void setCity(String city) {
-		this.city = city;
+		City = city;
 	}
-
 	@Override
 	public String toString() {
-		return "Student [rollNo=" + rollNo + ", name=" + name + ", city=" + city + "]";
+		return "Student [rollNo=" + rollNo + ", Name=" + Name + ", City=" + City + "]";
 	}
-	
-	
-	
+
 }
